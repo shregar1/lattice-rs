@@ -23,3 +23,4 @@ pub mod api_versioning;
 pub mod backup;
 pub mod config_reloader;
 pub mod performance_decorator;
+pub mod database;
