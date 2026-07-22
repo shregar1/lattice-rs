@@ -24,3 +24,4 @@ pub mod backup;
 pub mod config_reloader;
 pub mod performance_decorator;
 pub mod database;
+pub mod queue;
