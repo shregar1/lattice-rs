@@ -5,3 +5,4 @@ pub enum Environment {
     Production,
     Test,
 }
+pub mod http_method;

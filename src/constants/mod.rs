@@ -10,3 +10,4 @@ pub mod pagination;
 pub mod response_key;
 pub mod service;
 pub mod table;
+pub mod http_status;
