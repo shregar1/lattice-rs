@@ -25,3 +25,6 @@ pub mod config_reloader;
 pub mod performance_decorator;
 pub mod database;
 pub mod queue;
+pub mod migration;
+pub mod seeder;
+pub mod multitenancy;
