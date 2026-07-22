@@ -1,17 +1,14 @@
-//! Lattice-Rs Abstractions Module
-//! Base traits for Models, Repositories, Services, Orchestrators, and Controllers.
-
-use async_trait::async_trait;
-
-pub trait BaseModelTrait {
-    fn id(&self) -> &str;
-    fn urn(&self) -> &str;
-}
-
-#[async_trait]
-pub trait BaseRepositoryTrait<T, ID>: Send + Sync {
-    async fn find_by_id(&self, id: ID) -> Result<Option<T>, String>;
-}
-
-pub trait BaseServiceTrait: Send + Sync {}
-pub trait BaseOrchestratorTrait: Send + Sync {}
+pub mod configuration;
+pub mod constant;
+pub mod controller;
+pub mod dependency;
+pub mod dto;
+pub mod enum_def;
+pub mod exception;
+pub mod factory;
+pub mod middleware;
+pub mod model;
+pub mod orchestrator;
+pub mod repository;
+pub mod service;
+pub mod utility;
