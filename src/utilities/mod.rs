@@ -28,3 +28,4 @@ pub mod queue;
 pub mod migration;
 pub mod seeder;
 pub mod multitenancy;
+pub mod config_loader;
